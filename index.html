@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenieurbüro Hindrin Hassan – Tragwerksplanung & Statik</title>
+    <!-- Google Fonts for elegant typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c2c2c;
+            --secondary-color: #555;
+            --accent-color: #111;
+            --background-color: #fafafa;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Inter', sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: var(--font-sans);
+            color: var(--primary-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 5rem 3vw;
+            background-color: #fff;
+        }
+        header .text {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+        header .text h1 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header .text h2 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+        }
+        header .text p {
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        header .image {
+            flex: 1 1 50%;
+            min-width: 300px;
+            text-align: right;
+        }
+        header .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        /* Services Section */
+        .services {
+            padding: 5rem 3vw;
+            background-color: #fff;
+        }
+        .services h2 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 1.5rem;
+        }
+        .service-card h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .service-card p {
+            color: var(--secondary-color);
+        }
+        /* Contact Section */
+        .contact {
+            padding: 5rem 3vw;
+            background-color: #fafafa;
+        }
+        .contact h2 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .contact-item h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .contact-item p {
+            margin: 0.3rem 0;
+            color: var(--secondary-color);
+        }
+        .map-container {
+            margin-top: 2rem;
+            width: 100%;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 8px;
+        }
+        /* Footer */
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 3rem 2rem;
+            }
+            header .text, header .image {
+                flex: 1 1 100%;
+                text-align: left;
+            }
+            header .image {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="text">
+            <h1>Ingenieurbüro Hindrin Hassan</h1>
+            <h2>Kompetenz in Tragwerksplanung</h2>
+            <p>Ihr Experte für Tragwerksplanung, Statik und Bauzeichnung in Landsberg am Lech. Wir bieten professionelle Ingenieurdienstleistungen zu einem starken Preis-Leistungs-Verhältnis.</p>
+        </div>
+        <div class="image">
+            <img src="hero.png" alt="Architektur Bild">
+        </div>
+    </header>
+    <section class="services">
+        <h2>Unsere aktuellen Projekte</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Tragwerksplanung</h3>
+                <p>Maßgeschneiderte Lösungen für stabile Konstruktionen, die höchsten Ansprüchen gerecht werden. Wir analysieren, planen und realisieren stabilste Strukturen für Ihr Bauprojekt.</p>
+            </div>
+            <div class="service-card">
+                <h3>Statik</h3>
+                <p>Mit fundierten statischen Berechnungen sorgen wir für die Stabilität und Sicherheit Ihrer Bauwerke. Unsere Expertise gewährleistet präzise Analyse und Umsetzung gemäß Normen und Vorschriften.</p>
+            </div>
+            <div class="service-card">
+                <h3>Bauzeichnung</h3>
+                <p>Unsere Bauzeichnungen sind präzise und detailgetreu, um die reibungslose Umsetzung Ihres Bauprojekts zu gewährleisten. Wir visualisieren Ihre Ideen und konzipieren professionelle Pläne.</p>
+            </div>
+            <div class="service-card">
+                <h3>Ingenieurdienstleistungen</h3>
+                <p>Unser Team bietet umfassende Ingenieurdienstleistungen, die von der Planung bis zur Ausführung reichen. Wir unterstützen Sie bei allen technischen Anforderungen, um optimale Ergebnisse zu erzielen.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h4>Adresse</h4>
+                <p>Birkenstr. 21</p>
+                <p>86899 Landsberg am Lech</p>
+                <p>Bayern, Deutschland</p>
+            </div>
+            <div class="contact-item">
+                <h4>Kontakt</h4>
+                <p><strong>Telefon:</strong> 08191 4281492</p>
+                <p><strong>Email:</strong> <a href="mailto:hindrin.hassan@yahoo.de">hindrin.hassan@yahoo.de</a></p>
+            </div>
+            <div class="contact-item">
+                <h4>Öffnungszeiten</h4>
+                <p><strong>Mo–Fr:</strong> 9:00–18:00 Uhr</p>
+                <p><strong>Samstag:</strong> 10:00–14:00 Uhr</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=Birkenstr+21,+86899+Landsberg+am+Lech&output=embed" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
+        © 2025 Ingenieurbüro Hindrin Hassan
+    </footer>
+</body>
+</html>
